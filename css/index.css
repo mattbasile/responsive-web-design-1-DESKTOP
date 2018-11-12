@@ -212,5 +212,80 @@ footer{
     .main-content div {
         margin: 3% 0;
     }
+}
 
+@media only screen and (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+    .navigation{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    nav a {
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid grey;
+        text-decoration: none;
+        color: grey;
+    }
+    .navigation img{
+        padding: 20px;
+    }
+    /*HEADER*/
+    header{
+        border-top: 1px solid grey;
+        width: 100%;
+    }
+    header .left-content{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10% 0 15%;
+     }
+    header h1{
+        font-size: 4em;
+    }
+    header a{
+        margin: 2% auto 0;
+        border: 1px solid black;
+        padding: 1.5% 7.5%;
+        color: black;
+    }
+   
+    /* MAIN-CONTENT*/
+    .main-content{
+        margin: 0 auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5% 0 0;
+        width: 95%;
+        flex-direction: column;
+    }
+    .main-content .top-content{
+        flex-direction: column;
+    }
+    .main-content .bottom-content{
+        flex-direction: column;
+    }
+    .main-content .top-content .text-content{
+        width: 100%;
+    }
+    .main-content .bottom-content .text-content{
+        width: 100%;
+    }
+    .main-content div{
+        margin: 10% 0;
+    }
+    .main-content p{
+        width: 95%;
+    }
+    .main-content img{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
